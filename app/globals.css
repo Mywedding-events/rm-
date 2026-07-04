@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff5e7;
+  --color-rosewood: #5a2926;
+  --color-gold: #b88746;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-script: var(--font-great-vibes), cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #1f1513;
+  font-family: var(--font-serif);
+}
+
+.bg-slide {
+  animation: wedding-slideshow 45s infinite;
+}
+
+.invite-card {
+  background-image:
+    linear-gradient(rgba(255, 245, 231, 0.78), rgba(255, 245, 231, 0.78)),
+    radial-gradient(circle at top, rgba(184, 135, 70, 0.18), transparent 52%);
+}
+
+@keyframes wedding-slideshow {
+  0% { opacity: 0; transform: scale(1.06); }
+  4% { opacity: 1; }
+  11% { opacity: 1; }
+  16% { opacity: 0; transform: scale(1.11); }
+  100% { opacity: 0; transform: scale(1.11); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-slide {
+    animation: none;
+  }
+
+  .bg-slide:first-child {
+    opacity: 1;
+  }
+}

@@ -17,8 +17,8 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "Wedding Invitation | Rose & Ray",
-  description: "A modern digital wedding invitation with story, event details, RSVP, and gallery.",
+  title: "Ramy & Mary Wedding Invitation",
+  description: "Digital wedding invitation for Ramy Karam and Mary Haddad on Sunday, August 23, 2026.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
